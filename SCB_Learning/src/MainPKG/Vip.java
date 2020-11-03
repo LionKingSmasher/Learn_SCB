@@ -32,4 +32,6 @@ public class Vip extends person {
 	public String toString() {
 		return this.getName() + "[" + this.getRank() + "]" + "-" + this.getMoney();
 	}
+	
+	public 
 }

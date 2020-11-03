@@ -39,4 +39,7 @@ public class person {
 	public String toString() {
 		return this.getName() + "-" + this.getMoney();
 	}
+	
+	
+	
 }

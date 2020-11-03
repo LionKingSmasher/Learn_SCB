@@ -30,14 +30,14 @@ public class Bank {
 	public boolean createAccount(person account) {
 		if(size < 10) {
 			this.accounts[size++] = account;
-			this.addLog("계좌 추가 성공-" + account.toString()());
+			this.addLog("계좌 추가 성공-" + account.toString());
 			
 			return true;
 		}
 		else {
 			if(account instanceof Vip) {
 				for(int i = MAX_ACCOUNT-1; i>=0; i--) {
-					if(!(this.accounts[i] instanceof VipAccount)) {
+					if(!(this.accounts[i] instanceof Vip)) {
 						this.addLog("계좌 삭제- " + this.accounts[i].toString());
 						this.accounts[i] = account;
 						this.addLog("계좌 추가 성공 - " + account.toString());
